@@ -25,11 +25,11 @@ Here's an ordered list, with:
 
 Some basic Git commands are:
 ```
- Item one
- Item two
+ Item one 
+ Item two 
  Item three
  Item three-A
-Item three-B
+ Item three-B
 ```
 
 This is a block quote. It should be in block quotes! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
