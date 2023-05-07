@@ -1,0 +1,155 @@
+h1 {font-size: 1.33em;}
+  h2 {font-size: 1.17em;}
+  p {margin: 0 0 0.5em 0;}
+  h1, h2 {margin: 0.83em 0 0.17em 0; }
+  p:first-of-type {
+    font-size: 0.17em;
+    line-height: 1.33;
+    font-family: Verdana, sans-serif;
+  }
+
+
+:root {
+    --base-font-color: rgb(88, 110, 117);
+    --secondary-font-color: rgb(88, 110, 117);
+    --emphasised-font: rgb(147, 161, 161);
+    --c-background-color: rgb(0, 43, 54);
+    --c-background-highlights: rgb(7, 54, 66);
+    --c-yellow: rgb(181, 135, 0);
+    --c-orange: rgb(203, 75, 22);
+    --c-red: rgb(220, 50, 47);
+    --c-magenta: rgb(211, 54, 130);
+     --c-violet: rgb(108, 113, 196);
+    --c-blue: rgb(38, 139, 210);
+     --c-cyan: rgb(42, 161, 152);
+    --c-green: rgb(133, 153, 0);
+     }   
+body {
+    background-color: var(--c-background-color);
+    color: var(--base-font-color);
+  }
+  
+  header,
+  footer {
+    background-color: var(--c-background-highlights);
+    color: var(--base-font-color);
+  }
+  
+  a {
+    color: var(--c-magenta);
+    transition: color 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    color: var(--c-orange);
+  }
+
+article section {
+border: 3px solid c-cyan;
+padding: 10px;
+}
+
+header {
+text-align: center;
+}
+
+
+header h1 {
+color: c-yellow;
+font-size: 150%;
+}
+
+nav ul {
+list-style: none;
+}
+
+nav ul {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+
+nav li {
+flex: 1;
+text-align: center;
+}
+
+aside {
+color: c-green;
+}
+
+aside a {
+color: c-red;
+text-decoration: none;
+}
+
+aside a:hover {
+color: c-blue;
+}
+
+header {
+text-align: center;
+font-size: 150%;
+color: var(--c-yellow);
+}
+
+nav ul {
+list-style: none;
+}
+
+
+nav li {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+aside {
+color: var(--c-green);
+}
+
+aside a {
+color: var(--c-red);
+}
+
+aside a:hover {
+color: var(--c-blue);
+}
+body {
+max-width: 800px;
+margin: 0 auto;
+}
+
+h1, h2, h3 {
+padding-top: 50px;
+}
+
+  body {
+    max-width: 800px;
+  }
+  
+  h1, h2, h3 {
+    padding-top: 50px;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  aside {
+    flex-basis: 30%;
+  }
+  body {
+    font-size: 130%;
+  }
+  .section {
+    border: 18px  solid rgb(0, 206, 209);
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  form input[type="search"], form input[type="submit"] {
+    font-size: 20px;
+  }

@@ -1,0 +1,36 @@
+:root {
+    --primary-color: rgb(0, 123, 255);
+    --secondary-color: rgb(108, 117, 125);
+    --bg-color: rgb(248, 249, 250);
+    --font-color: rgb(33, 37, 41);
+    --heading-color: rgb(0, 123, 255);
+  }
+  
+  [data-theme="dark"] {
+    --primary-color: rgb(108, 117, 125);
+    --secondary-color: rgb(0, 123, 255);
+    --bg-color: rgb(33, 37, 41);
+    --font-color: rgb(248, 249, 250);
+    --heading-color: rgb(108, 117, 125);
+  }
+  
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color);
+  }
+  
+  button {
+    background-color: var(--primary-color);
+    color: rgb(248, 249, 250);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
