@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bird Images</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script>
+    function changeImage(imageUrl, photographer) {
+      var imageElement = document.getElementById('birdImage');
+      var textElement = document.getElementById('photographer');
+
+      imageElement.src = imageUrl;
+      textElement.innerHTML = photographer;
+    }
+  </script>
+</head>
+<body>
+  <main>
+    <h1>Bird Images</h1>
+    <img id="birdImage" src="http://www.outgrabe.net/bird00.jpg" alt="Bird Image">
+    <p id="photographer">Pardalote by fir0002 (CC-by-NC)</p>
+    
+    <button onclick="changeImage('http://www.outgrabe.net/bird00.jpg', 'Pardalote by fir0002 (CC-by-NC)')">Pardalote</button>
+    <button onclick="changeImage('http://www.outgrabe.net/bird01.jpg', 'Purple swamp hen by Toby Hudson (CC-by-SA)')">Purple Swamp Hen</button>
+    <button onclick="changeImage('http://www.outgrabe.net/bird02.jpg', 'White-headed Stilt by JJ Harrison (CC-by-SA)')">White-headed Stilt</button>
+    <button onclick="changeImage('http://www.outgrabe.net/bird03.jpg', 'Inland Thornbill by Peter Jacobs (CC-by-SA)')">Inland Thornbill</button>
+    <button onclick="changeImage('http://www.outgrabe.net/bird04.jpg', 'Rose Robin by JJ Harrison (CC-by-SA)')">Rose Robin</button>
+  </main>
+</body>
+</html>

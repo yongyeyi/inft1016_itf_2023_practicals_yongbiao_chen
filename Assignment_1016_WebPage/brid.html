@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">  
+        <title>Bird Images</title>    
+        <link rel="stylesheet" href="u.css">    <script>
+    function changeImage(imageUrl, photographer) {
+      var imageElement = document.getElementById('birdImage');
+      var textElement = document.getElementById('photographer');
+
+      imageElement.src = imageUrl;
+      textElement.innerHTML = photographer;
+    }
+        </script> 
+</head>
+<body onload="loadPage()">
+    <body>    <header><h2>Bird Knowledge </h2>      <button onclick="">Toggle Theme</button>    </header>  
+        <nav>
+            
+            
+
+          <form>        <input type="text" name="user_name" placeholder="Enter your name!">    
+              <button type="submit">Apply!</button>
+          </form>    
+       </nav>    <main> 
+           <div id="greeting"></div>  
+          <script>
+              const queryString = window.location.search;
+              const urlParams = new URLSearchParams(queryString);
+              const userName = urlParams.get('user_name');
+              const greeting = document.querySelector('#greeting');
+              if (userName) {
+                greeting.textContent =  'Hello, ' + userName + '!';
+              }
+            </script>
+</body>
+
+<body>
+    <main>
+      <h1>Bird Images</h1>
+      <img id="birdImage" src="http://www.outgrabe.net/bird00.jpg" alt="Bird Image">
+      <p id="photographer">Pardalote by fir0002 (CC-by-NC)</p>
+      
+      <button onclick="changeImage('http://www.outgrabe.net/bird00.jpg', 'Pardalote by fir0002 (CC-by-NC)')">Pardalote</button>
+      <button onclick="changeImage('http://www.outgrabe.net/bird01.jpg', 'Purple swamp hen by Toby Hudson (CC-by-SA)')">Purple Swamp Hen</button>
+      <button onclick="changeImage('http://www.outgrabe.net/bird02.jpg', 'White-headed Stilt by JJ Harrison (CC-by-SA)')">White-headed Stilt</button>
+      <button onclick="changeImage('http://www.outgrabe.net/bird03.jpg', 'Inland Thornbill by Peter Jacobs (CC-by-SA)')">Inland Thornbill</button>
+      <button onclick="changeImage('http://www.outgrabe.net/bird04.jpg', 'Rose Robin by JJ Harrison (CC-by-SA)')">Rose Robin</button>
+    </main> 
+         <article> 
+            <h2>Origin of Birds</h2>    
+                <p>The origin of birds is judged to have evolved from dinosaurs according to information.</p>
+                  <h3>Number of bird types</h3>   
+                  <p>According to big data, there are more than 8,700 types of birds in the world so far. In Australia, there are 973 types of birds.</p>  
+
+                         <h3>Benefits for the world</h3> 
+                         <p>Eliminating pests. Swallows consume a lot of time in the air to catch pests, mainly feeding on mosquitoes, flies and other insects</p>
+                         <p>Bird droppings contain a large amount of nitrogen and phosphorus compounds, making it a high-quality organic fertilizer.</p>
+                             </article>      <aside>        <h2>Related</h2>        <ul>        
+                                   <li><a href="#">HE clasps the crag with crooked hands</a></li>  
+                                   <li><a href="#"> Close to the sun in lonely lands</a></li>    
+                                    <li><a href="#">Ringed with the azure world</a></li>
+                                    <li><a href="#">he stands</a></li>
+                                    <li><a href="#">The wrinkled sea beneath him crawls</a></li>          
+                                    <li><a href="#">He watches from his mountain walls</a></li>        
+                                      <li><a href="#">And like a thunderbolt he falls</a></li>        </ul>      </aside>    </main>
+                                      <footer>      <p>©Copyright 2050 by nobody. All rights reversed.</p>  
+                                      </footer> <script>const toggleButton = document.querySelector('button');
+                                         const html = document.querySelector('html');
+                                         
+                                         toggleButton.addEventListener('click', () => {
+                                           if (html.dataset.theme === 'dark') {
+                                             html.dataset.theme = 'light';
+                                           } else {
+                                             html.dataset.theme = 'dark';
+                                           }
+                                         });
+                                         </script> 
+
+
+</body>
+    </html>
