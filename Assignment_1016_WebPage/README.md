@@ -2,7 +2,7 @@
 Description
 
 My content is about the introduction of birds and the sharing of some bird pictures
-I want more people to learn about birds
+I want more people to learn about birds.
 I think a white background will make people read more easily, and adding many kinds of colors will make people tired of reading the content.
 
 Methods
