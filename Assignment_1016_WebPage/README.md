@@ -6,7 +6,7 @@ I want more people to learn about birds
 
 
 Methods
-root is to create a palette
+root is to create a palette.
 If you are not satisfied with a color, you can quickly change it if you use root.
 Use localStorage to do some local data storage.
 I set up four different buttons inside to display photos of different birds through this.
