@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="en" data-theme="light">
+    <html>  
+      <head>  <meta charset="utf-8">  
+        <title>My page title</title>    
+        <link rel="stylesheet" href="u.css">    <script></script> 
+
+           </head>
+           <body onload="load()"><body>    <header><h1>Header</h1>      <button onclick="">Toggle Theme</button>    </header>  
+              <nav>      <ul>        
+            <li><a href="#">Home</a></li>      
+      
+            <li><a href="#">Contact</a></li>      </ul>  
+                <form>        <input type="text" name="user_name" placeholder="Enter your name!">    
+                    <button type="submit">Apply!</button>
+                </form>    
+             </nav>    <main> 
+                 <div id="greeting"></div>  
+                 <script>
+               
+                  const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const userNameParam = urlParams.get('user_name');
+const storedTheme = localStorage.getItem('theme');
+let storedName = localStorage.getItem('user_name');
+
+document.addEventListener('DOMContentLoaded', () => {
+  const greeting = document.querySelector('#greeting');
+  const inputName = document.querySelector('input[name="user_name"]');
+
+  if (!userNameParam && storedName) {
+    greeting.textContent = 'Hello, ' + storedName + '!';
+    inputName.value = storedName;
+  } else if (userNameParam) {
+    storedName = userNameParam;
+    localStorage.setItem('user_name', userNameParam);
+    greeting.textContent = 'Hello, ' + userNameParam + '!';
+    inputName.value = userNameParam;
+  } else {
+    storedName = ''; // Set an empty value if no stored name
+  }
+
+  if (storedTheme) {
+    document.documentElement.dataset.theme = storedTheme;
+  }
+});
+
+                </script>  <article> 
+                       <h2>Article heading</h2>    
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus.
+                             Set sit amet ipsum mauris.</p>
+                             <h3>Subsection</h3>      
+
+                                     
+                                        </article>      <aside>        <h2>Related</h2>        <ul>        
+                                              <li><a href="#">Oh I do like to be beside the seaside</a></li>      
+        
+                                                 <li><a href="#">Oh well...</a></li>        </ul>      </aside>    </main>
+                                                 <footer>      <p>©Copyright 2050 by nobody. All rights reversed.</p>  
+                                                 </footer> <script>const toggleButton = document.querySelector('button');
+                                                    const html = document.querySelector('html');
+                                                    
+                                                    toggleButton.addEventListener('click', () => {
+                                                      if (html.dataset.theme === 'dark') {
+                                                        html.dataset.theme = 'light';
+                                                        localStorage.setItem('theme', 'light');
+                                                      } else {
+                                                        html.dataset.theme = 'dark';
+                                                        localStorage.setItem('theme', 'dark');
+                                                      }
+                                                    });
+                                                    </script>  </body></html>
